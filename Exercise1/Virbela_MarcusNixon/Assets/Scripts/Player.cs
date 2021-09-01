@@ -16,21 +16,21 @@ public class Player : MonoBehaviour
         
     }
 
-    public Item FindClosest(Item[] items)
+    public HighlightableObject FindClosest(HighlightableObject[] highlightableObjects)
     {
-        Item closestItem = null;
+        HighlightableObject cloestHighlightableObject = null;
         float shortestDistance = Mathf.Infinity;
 
-        foreach (var go in items)
+        foreach (var highlightableObject in highlightableObjects)
         {
-            float tempDistance = Vector3.Distance(go.transform.position, transform.position);
+            float tempDistance = Vector3.Distance(highlightableObject.transform.position, transform.position);
             if (tempDistance <= shortestDistance)
             {
                 shortestDistance = tempDistance;
-                closestItem = go;
+                cloestHighlightableObject = highlightableObject;
             }
         }
 
-        return closestItem;
+        return cloestHighlightableObject;
     }
 }
