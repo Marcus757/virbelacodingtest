@@ -76,3 +76,6 @@ Allow the designer to choose the base color and highlight color for Items/Bots a
 ## If you have questions ##
 
 * Reach out to your Virbela contact (Recruiter or Hiring Manager)
+
+## Answers 
+1. I believe that my 
