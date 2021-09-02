@@ -78,4 +78,7 @@ Allow the designer to choose the base color and highlight color for Items/Bots a
 * Reach out to your Virbela contact (Recruiter or Hiring Manager)
 
 ## Answers 
-1. I believe that my 
+1. I believe that my implementation works for the given scenario, but would require optimization if Items or Bots could be added at runtime. For optimization, we could still find all Items and Bots in the Start method, but we could also add a collection that we could use for caching. If we provide a unique ID to each Item and Bot, then each object could be added to a Dictionary. Whenever new Items or Bots are added to the scene, they would also be added or removed from Dictionary. This caching system would prevent us from having to use the GameObjects.Find() method to find all of our objects on every frame in the Update method.
+2. I spent about 1 hour implementing and testing the solution.
+3. The most challening part for me was setting up the project in GitHub. Ran into some trouble when attempting to publish the repository into GitHub using JetBrains Rider. Went back to the basics and just downloaded GitKraken. Was still receiving errors when doing the first push. Ended up deleting the pre-push hooks in my repository and everything worked fine.
+4. Honestly, I wouldn't add anything to this exercise. This exercise appears to cover a little bit of polymorphism, inheritance and requires an intermediate level of understanding in Unity. With some coding challenges, you have to spend a lot more time with figuring out how to solve a complex algorithm to prove that you can code. In this exercise, the algorithm is simple and you can spend more time focusing on the architecture and design of the app as opposed to working on the algorithm.
